@@ -1,0 +1,101 @@
+/* calender area */
+.calender {
+    text-align:center;
+    font-size:1.5rem;
+    border:solid 0.2rem black;
+    /* カレンダーを中央に配置。 */
+    margin:0.5rem auto 0;
+}
+.calender td{ 
+    padding:0.5rem;
+    border:solid 0.1rem black;
+}
+.calender td:nth-child(1) {
+    color:crimson;
+}
+.calender td:nth-child(7) {
+    color:royalblue;
+}
+.calender_head {
+    font-weight:bold;
+    border-bottom:double 0.2rem black;
+}
+.calender {
+    width:100%;
+}
+.calender td{ 
+    width:calc(100%/7);
+}
+
+.day_detail_mark{
+    display:none;
+}
+@media (max-width:800px){
+    .day_detail{
+        display:none;
+    }
+    .day_detail_mark{
+        display:block;
+        padding:0.5rem;
+        margin:0.5rem;
+    }
+}
+.year_month_select {
+    text-align:center;
+    margin-top: 1%;
+}
+.day_cell div:first-child {
+    text-align: left;
+    font-size: 1rem;
+}
+.day_cell div:nth-child(2) {
+    color: blue;
+}
+.day_cell div:last-child{
+    color: red;
+}
+.day_cell_small div:first-child {
+    background: blue;
+}
+.day_cell_small div:last-child {
+    background: red;
+}
+
+/* calender area */
+
+
+
+/* balance form area */
+.balance_form_area {
+    background:lavender;
+    padding:1rem;
+    margin:1rem 0;
+    border-radius:0.5rem;
+}
+
+
+
+/* tab system area */
+
+
+.tab_radio {
+    display:none;
+}
+.tab_area {
+    display:none;
+}
+.tab_label {
+    border:solid 0.2rem black;
+    padding:0 0.2rem;
+    background:silver;
+    cursor:pointer;
+}
+
+input[type="radio"].tab_radio:checked + .tab_label { background:white; }
+
+input[type="radio"]#tab_radio_1:checked ~ #tab_area_1 { display:block; }
+input[type="radio"]#tab_radio_2:checked ~ #tab_area_2 { display:block; }
+input[type="radio"]#tab_radio_3:checked ~ #tab_area_3 { display:block; }
+input[type="radio"]#tab_radio_4:checked ~ #tab_area_4 { display:block; }
+input[type="radio"]#tab_radio_5:checked ~ #tab_area_5 { display:block; }
+input[type="radio"]#tab_radio_6:checked ~ #tab_area_6 { display:block; }
